@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+</head>
+<body>
+    <h2>Add a New Book</h2>
+    <form method="POST" action="/admin/add_book">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required><br>
+
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required><br>
+
+        <label for="publisher">Publisher:</label>
+        <input type="text" name="publisher" id="publisher" required><br>
+
+        <button type="submit">Add Book</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
