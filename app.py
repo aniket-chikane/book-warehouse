@@ -106,12 +106,14 @@ def add_book():
         title = request.form['title']
         author = request.form['author']
         publisher = request.form['publisher']
+        price = request.form['price']
+        warehouse = request.form['warehouse'] 
 
         with connection.cursor() as cur:
-            cur.execute("INSERT INTO books (title, author, publisher) VALUES (%s, %s, %s)", (title, author, publisher))
+            cur.execute("INSERT INTO books (title, author, publisher,price,warehouse) VALUES (%s, %s, %s,%s,%s)", (title, author, publisher,price,warehouse))
             connection.commit()
 
-        return redirect(url_for('index'))
+        return redirect(url_for('admin_dashboard'))
 
     return render_template('add_book.html')
 

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Book</title>
+    <link rel="stylesheet" href="../static/css/add_book.css">
 </head>
 <body>
     <h2>Add a New Book</h2>
@@ -17,8 +19,14 @@
         <label for="publisher">Publisher:</label>
         <input type="text" name="publisher" id="publisher" required><br>
 
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price" required><br>
+
+        <label for="warehouse">Warehouse:</label>
+        <input type="text" name="warehouse" id="warehouse" required><br>
+
         <button type="submit">Add Book</button>
     </form>
-    <a href="/">Back to Home</a>
+    <a href="/admin/dashboard">Back to Home</a>
 </body>
 </html>
